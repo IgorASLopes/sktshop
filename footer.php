@@ -1,5 +1,5 @@
 <footer>
-
+<hr/>
 <h3 style="text-align:center;">rua ??? n: ??</h3>
 
 

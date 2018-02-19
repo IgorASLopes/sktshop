@@ -25,13 +25,10 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="inputAddress">Idade</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="Idade" name="idade">
+    <label for="inputAddress">Data de nascimento</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="Data de nascimento" name="datan">
   </div>
-  <div class="form-group">
-    <label for="inputAddress2">Telefone</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Telefone" name="tel">
-  </div>
+  
  <div class="form-group">
     <label for="inputAddress2">CPF</label>
     <input type="text" class="form-control" id="inputAddress2" placeholder="CPF" name="cpf">

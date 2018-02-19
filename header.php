@@ -6,14 +6,17 @@
 <title>SKT Shop</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="icon" type="image/png" href="img/icon2.png"/>	
-	<h1 style="text-align: center">SKT Shop</h1>
-	<hr/>		
+	
 
 </head>
 
 <body>
 
-
+<div class="alert alert-info" role="alert" style="text-align:center;">
+  Semana dos Games
+</div>
+	<h1 style="text-align: center">SKT Shop</h1>
+	<hr/>	
 <header>
 	<div class="row">
 		<div class="col-md-3">
@@ -25,7 +28,7 @@
 
 <div class="col-md-9" style="padding-top: 70px">
 	<form class="form-inline lg">
-      <input class="form-control form-control lg col-md-9" type="search" placeholder="Search" aria-label="Search">
+      <input class="form-control form-control lg col-md-9" type="search" placeholder="Pesquisar" aria-label="Search">
       <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Pesquisar</button>
     </form>
 </div>
@@ -37,7 +40,7 @@
   <a class="nav-item nav-link" href="index.php">Home</a>
   <a class="nav-item nav-link" href="produtos.php">produtos</a>
   <a class="nav-item nav-link" href="cadastro.php">Cadastro</a>
-  <a class="nav-item nav-link" href="#">Contato</a>
+  <a class="nav-item nav-link" href="login.php">Login</a>
 </nav>
 
 
