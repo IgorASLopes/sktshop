@@ -17,31 +17,35 @@
 </div>
 	<h1 style="text-align: center">SKT Shop</h1>
 	<hr/>	
-<header>
+<header style="background-color: #293337; padding-top: 20px;">
 	<div class="row">
-		<div class="col-md-3">
-			<img src="img/logo1.jpg">
+		<div class="col-md-4">
+			<img src="img/logo2.jpg">
 		</div>
 			
 
 
+<form method="POST" action="logar.php" class="col-md-7" style="color: #3ae5e7; padding-bottom: 20px">
+	  <div class="form-group">
+	    <label for="exampleInputEmail1">CPF</label>
+	    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="CPF" name="cpf">
+	    
+	  </div>
 
-<div class="col-md-9" style="padding-top: 70px">
-	<form class="form-inline lg">
-      <input class="form-control form-control lg col-md-9" type="search" placeholder="Pesquisar" aria-label="Search">
-      <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Pesquisar</button>
-    </form>
-</div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Senha</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha" name="senha">
+  </div>
+  <div class="form-check">
+   
   
+  </div>
+ <center> <button type="submit" class="btn btn-outline-info my-2 my-sm-0">Entrar</button></center>
+</form>
+
+
 </div>
 
-
-<nav class="nav nav-pills nav-fill" style="padding-top: 65px">
-  <a class="nav-item nav-link" href="index.php">Home</a>
-  <a class="nav-item nav-link" href="produtos.php">produtos</a>
-  <a class="nav-item nav-link" href="cadastro.php">Cadastro</a>
-  <a class="nav-item nav-link" href="login.php">Login</a>
-</nav>
 
 
 

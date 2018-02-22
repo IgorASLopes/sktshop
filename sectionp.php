@@ -2,8 +2,9 @@
 <html lang="pt-br">
 
 
-
 <div class="container">
+
+
 <body>
     <nav class="nav nav-pills nav-fill navbar navbar-expand-lg navbar-dark bg-dark" style="padding-top: 15px">
       <a class="nav-item nav-link" href="index.php" style="color: #3ae5e7">Home</a>
@@ -50,11 +51,12 @@
   </div>
 </nav>
 
-
-
-
    <div class="row" >
 <div>
+
+
+
+
 <?php
 include "conexao.php";
 

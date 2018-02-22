@@ -26,7 +26,7 @@
   </div>
   <div class="form-group">
     <label for="inputAddress">Data de nascimento</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="Data de nascimento" name="datan">
+    <input type="date" class="form-control" id="inputAddress" placeholder="Data de nascimento" name="datan">
   </div>
   
  <div class="form-group">
