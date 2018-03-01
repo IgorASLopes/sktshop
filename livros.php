@@ -1,13 +1,24 @@
+<?php
+include 'header.php';
+?>
+
 <!doctype html>
 <html lang="pt-br">
 
-<div class="container">
-   <div class="row" >
 
+
+<div class="container">
+
+
+
+
+
+   <div class="row">
+   
 <?php
 include "conexao.php";
 
-$sql = "SELECT * FROM games";
+$sql = "SELECT * FROM livros";
 $result = $conn->query($sql);
 if($result->num_rows > 0){
 
@@ -15,7 +26,7 @@ if($result->num_rows > 0){
    
 
     echo'
-   <p>&nbsp;</p>
+ <p>&nbsp;</p>
    <p>&nbsp;</p>
    <p>&nbsp;</p>
    <p>&nbsp;</p>
@@ -41,10 +52,11 @@ if($result->num_rows > 0){
   <img class="card-img-top" src="'.$row['foto'].'" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">'.$row['nome'].'</h5>
-      <p class="card-text">Classificação :   '.$row['classificacao'].'</p>
+      <p class="card-text">Autor:   '.$row['autor'].'</p>
         <p class="card-text">Gênero:   '.$row['genero'].'</p>
+        <p class="card-text">Editora:   '.$row['editora'].'</p>
         <p class="card-text">preço:   '.$row['preco'].'</p>
-        <center> <a href="#" class="btn btn-outline-info">Add ao carrinho</a><a href="#" class="btn btn-outline-info">Ver mais</a></center>
+         <center> <a href="#" class="btn btn-outline-info">Add ao carrinho</a><a href="#" class="btn btn-outline-info">Ver mais</a></center>
 
   </div>
 </div>
@@ -55,6 +67,8 @@ if($result->num_rows > 0){
 
 
 ';
+
+
 
 
 
@@ -76,26 +90,19 @@ $conn->close();
 
 
 
-
-
-
-</div>
-
-
-
-
 </div>
   </body>
 
 
-
 </div>
 
 
+<?php
+include 'footer.php';
+?>
 
 
 </html>
-
 
 
 

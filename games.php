@@ -1,8 +1,19 @@
+<?php
+include 'header.php';
+?>
+
 <!doctype html>
 <html lang="pt-br">
 
+
+
 <div class="container">
-   <div class="row" >
+
+
+
+
+
+   <div class="row">
 
 <?php
 include "conexao.php";
@@ -44,7 +55,7 @@ if($result->num_rows > 0){
       <p class="card-text">Classificação :   '.$row['classificacao'].'</p>
         <p class="card-text">Gênero:   '.$row['genero'].'</p>
         <p class="card-text">preço:   '.$row['preco'].'</p>
-        <center> <a href="#" class="btn btn-outline-info">Add ao carrinho</a><a href="#" class="btn btn-outline-info">Ver mais</a></center>
+         <center> <a href="#" class="btn btn-outline-info">Add ao carrinho</a><a href="#" class="btn btn-outline-info">Ver mais</a></center>
 
   </div>
 </div>
@@ -55,6 +66,8 @@ if($result->num_rows > 0){
 
 
 ';
+
+
 
 
 
@@ -76,26 +89,19 @@ $conn->close();
 
 
 
-
-
-
-</div>
-
-
-
-
 </div>
   </body>
 
 
-
 </div>
 
 
+<?php
+include 'footer.php';
+?>
 
 
 </html>
-
 
 
 
