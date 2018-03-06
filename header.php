@@ -24,20 +24,25 @@
 		</div>
 			
 
-
 <form method="POST" action="logar.php" class="col-md-7" style="color: #3ae5e7; padding-bottom: 20px">
 	  <div class="form-group">
-	    <label for="exampleInputEmail1">CPF</label>
+	    <label for="exampleInputEmail1" method="POST">CPF</label>
 	    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="CPF" name="cpf">
 	    
 	  </div>
 
   <div class="form-group">
-    <label for="exampleInputPassword1">Senha</label>
+    <label for="exampleInputPassword1" method="POST">Senha</label>
     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha" name="senha">
   </div>
+
+	<?php 
+		session_start();
+		echo $_SESSION['nome'];
+			
+	 ?>
+
   <div class="form-check">
-   
   
   </div>
  <center> <button type="submit" class="btn btn-outline-info my-2 my-sm-0">Entrar</button></center>
