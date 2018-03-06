@@ -6,16 +6,17 @@
 
 	$sql = "SELECT * FROM games WHERE nome = '$nome'";
 
-	$result = $conn->query($sql);
-
+$result = $conn->query($sql);
 if($result->num_rows > 0){
 
 
-   
 
-    echo "você foi conectado";
-header(lacation:"produto.php")
-;
+   //lembra dessa poha namoral 
+   header('location: pesquisado.php?nome='.$nome);
+    echo "GO!";
+ 
+
+
 
 
 

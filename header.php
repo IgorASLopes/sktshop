@@ -6,7 +6,6 @@
 <title>SKT Shop</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="icon" type="image/png" href="img/icon2.png"/>	
-	
 
 </head>
 
@@ -24,25 +23,20 @@
 		</div>
 			
 
+
 <form method="POST" action="logar.php" class="col-md-7" style="color: #3ae5e7; padding-bottom: 20px">
 	  <div class="form-group">
-	    <label for="exampleInputEmail1" method="POST">CPF</label>
+	    <label for="exampleInputEmail1">CPF</label>
 	    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="CPF" name="cpf">
 	    
 	  </div>
 
   <div class="form-group">
-    <label for="exampleInputPassword1" method="POST">Senha</label>
+    <label for="exampleInputPassword1">Senha</label>
     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha" name="senha">
   </div>
-
-	<?php 
-		session_start();
-		echo $_SESSION['nome'];
-			
-	 ?>
-
   <div class="form-check">
+   
   
   </div>
  <center> <button type="submit" class="btn btn-outline-info my-2 my-sm-0">Entrar</button></center>
@@ -104,22 +98,22 @@
     <ul class="navbar-nav mr-auto">
 
       <li class="nav-item active">
-        <a class="nav-link" href="games.php" style="color: #3ae5e7">Games<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="produto.php?cat=game" style="color: #3ae5e7">Games<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="livros.php" style="color: #3ae5e7">Livros</a>
+        <a class="nav-link" href="produto.php?cat=Livros" style="color: #3ae5e7">Livros</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="celulares.php" style="color: #3ae5e7">Celulares</a>
+        <a class="nav-link" href="produto.php?cat=Celulares" style="color: #3ae5e7">Celulares</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="info.php" style="color: #3ae5e7">Informática</a>
+        <a class="nav-link" href="produto.php?cat=Informatica" style="color: #3ae5e7">Informática</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="roupas.php" style="color: #3ae5e7">Roupas</a>
+        <a class="nav-link" href="produto.php?cat=Roupas" style="color: #3ae5e7">Roupas</a>
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="eletro.php" style="color: #3ae5e7">Eletronicos</a>
+        <a class="nav-link" href="produto.php?cat=Eletronicos" style="color: #3ae5e7">Eletronicos</a>
       </li>
      
      
@@ -138,7 +132,9 @@
 
 
 
-
+<?php
+include 'conexao.php';
+?>
 
 
 </div>

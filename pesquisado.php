@@ -1,13 +1,17 @@
-<?php 
-include 'conexao.php';
-include 'header.php';
-$nome = $_GET['cat'];
+<!doctype html>
+<html lang="pt-br">
 
-$sql = "SELECT * FROM produtos WHERE tipo='$nome'";
+<div class="container">
+   <div class="row" >
 
+<?php
+include 'header.php ';
+include "conexao.php";
+$nome = $_GET['nome'];
+
+$sql = "SELECT * FROM games WHERE nome='$nome'";
 $result = $conn->query($sql);
 if($result->num_rows > 0){
-
 
   while($row = $result->fetch_assoc()){
    
@@ -49,7 +53,3 @@ $conn->close();
 
 
 ?>
-
-
-
- ?>
