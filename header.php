@@ -21,16 +21,8 @@
 		<div class="col-md-4">
 			<img src="img/logo2.jpg">
 		</div>
-<div style="color: #fff;">			
-   	<?php 
-		session_start();
-		include 'conexao.php';
-		echo $_SESSION['nome1'];
-		echo $_SESSION['datan'];
+			
 
-
-	 ?>
-</div>	
 
 <form method="POST" action="logar.php" class="col-md-7" style="color: #3ae5e7; padding-bottom: 20px">
 	  <div class="form-group">
@@ -44,7 +36,16 @@
     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha" name="senha">
   </div>
   <div class="form-check">
+   <div style="color: #fff;">			
+   	<?php 
+		session_start();
+		include 'conexao.php';
+		echo $_SESSION['nome1'];
+		echo $_SESSION['datan'];
 
+
+	 ?>
+</div>	
   
   </div>
  <center> <button type="submit" class="btn btn-outline-info my-2 my-sm-0">Entrar</button></center>
@@ -112,16 +113,16 @@
         <a class="nav-link" href="produto.php?cat=Livros" style="color: #3ae5e7">Livros</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="produto.php?cat=Celulares" style="color: #3ae5e7">Celulares</a>
+        <a class="nav-link" href="produto.php?cat=cel" style="color: #3ae5e7">Celulares</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="produto.php?cat=Informatica" style="color: #3ae5e7">Informática</a>
+        <a class="nav-link" href="produto.php?cat=info" style="color: #3ae5e7">Informática</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="produto.php?cat=Roupas" style="color: #3ae5e7">Roupas</a>
+        <a class="nav-link" href="produto.php?cat=roupa" style="color: #3ae5e7">Roupas</a>
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="produto.php?cat=Eletronicos" style="color: #3ae5e7">Eletronicos</a>
+        <a class="nav-link" href="produto.php?cat=eletro" style="color: #3ae5e7">Eletronicos</a>
       </li>
      
      

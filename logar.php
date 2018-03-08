@@ -1,14 +1,10 @@
 <?php
 session_start();
 include "conexao.php";
-
 $cpf = $_POST['cpf'];
 $senha = $_POST['senha'];
-
 $sql = "SELECT * FROM cliente where cpf='$cpf' AND senha='$senha'";
-
 $result = $conn->query($sql);
-
 	if ($result-> num_rows > 0){
 		while($row = $result -> fetch_assoc())
 		{
@@ -17,22 +13,10 @@ $result = $conn->query($sql);
 		
 		
 	 			header('refresh: 3, index.php');
-
 				echo "ta indo rapaz confio em tu <3";
 			
-
 	 } 
 	}
-
 	 $conn -> close();
-
 	
 ?>
-
-
-
-
-
-
-
-

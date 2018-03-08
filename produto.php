@@ -1,3 +1,5 @@
+<div class="container">
+<div class="row">
 <?php 
 include 'conexao.php';
 include 'header.php';
@@ -19,16 +21,12 @@ if($result->num_rows > 0){
   <img class="card-img-top" src="'.$row['foto'].'" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">'.$row['nome'].'</h5>
-      <p class="card-text">Classificação :   '.$row['classificacao'].'</p>
-        <p class="card-text">Gênero:   '.$row['genero'].'</p>
+     
         <p class="card-text">preço:   '.$row['preco'].'</p>
         <center> <a href="#" class="btn btn-outline-info">Add ao carrinho</a><a href="#" class="btn btn-outline-info">Ver mais</a></center>
 
   </div>
 </div>
-
-
-
 </div>
 
 
@@ -48,8 +46,10 @@ $conn->close();
 
 
 
-?>
+
 
 
 
  ?>
+ </div>
+ </div>

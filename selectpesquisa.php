@@ -4,7 +4,7 @@
 	$nome = $_POST['nome'];
 
 
-	$sql = "SELECT * FROM games WHERE nome = '$nome'";
+	$sql = "SELECT * FROM produtos WHERE nome = '$nome'";
 
 $result = $conn->query($sql);
 if($result->num_rows > 0){

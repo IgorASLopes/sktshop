@@ -1,12 +1,8 @@
 HEADER CARAI N ESQUECE DESSA PORRA SEU MERDA
 
-<div style="color: #fff;">			
-   	<?php 
+
+	<?php 
 		session_start();
-		include 'conexao.php';
-		echo $_SESSION['nome1'];
-		echo $_SESSION['datan'];
-
-
+		echo $_SESSION['nome'];
+			
 	 ?>
-</div>	

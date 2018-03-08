@@ -1,7 +1,7 @@
 <?php 
 $nome = $_GET['cat'];
 
-$sql = "SELECT * FROM games WHERE nome='$nome'";
+$sql = "SELECT * FROM produtos WHERE tipo='$nome'";
 $result = $conn->query($sql);
 if($result->num_rows > 0){
 
@@ -22,9 +22,6 @@ if($result->num_rows > 0){
 
   </div>
 </div>
-
-
-
 </div>
 
 

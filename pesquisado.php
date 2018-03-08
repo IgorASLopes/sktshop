@@ -9,7 +9,7 @@ include 'header.php ';
 include "conexao.php";
 $nome = $_GET['nome'];
 
-$sql = "SELECT * FROM games WHERE nome='$nome'";
+$sql = "SELECT * FROM produtos WHERE nome='$nome'";
 $result = $conn->query($sql);
 if($result->num_rows > 0){
 
@@ -23,8 +23,6 @@ if($result->num_rows > 0){
   <img class="card-img-top" src="'.$row['foto'].'" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">'.$row['nome'].'</h5>
-      <p class="card-text">Classificação :   '.$row['classificacao'].'</p>
-        <p class="card-text">Gênero:   '.$row['genero'].'</p>
         <p class="card-text">preço:   '.$row['preco'].'</p>
         <center> <a href="#" class="btn btn-outline-info">Add ao carrinho</a><a href="#" class="btn btn-outline-info">Ver mais</a></center>
 
