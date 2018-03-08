@@ -21,8 +21,16 @@
 		<div class="col-md-4">
 			<img src="img/logo2.jpg">
 		</div>
-			
+<div style="color: #fff;">			
+   	<?php 
+		session_start();
+		include 'conexao.php';
+		echo $_SESSION['nome1'];
+		echo $_SESSION['datan'];
 
+
+	 ?>
+</div>	
 
 <form method="POST" action="logar.php" class="col-md-7" style="color: #3ae5e7; padding-bottom: 20px">
 	  <div class="form-group">
@@ -36,7 +44,7 @@
     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha" name="senha">
   </div>
   <div class="form-check">
-   
+
   
   </div>
  <center> <button type="submit" class="btn btn-outline-info my-2 my-sm-0">Entrar</button></center>
