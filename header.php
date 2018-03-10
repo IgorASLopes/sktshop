@@ -15,6 +15,14 @@
   Semana dos Games
 </div>
 	<h1 style="text-align: center">SKT Shop</h1>
+	<?php 
+session_start();
+if($_SESSION['nome1']){
+
+echo '<center><button type="submit" class="btn btn-outline-info"><a href="sair.php">Desconectar</a></button></center>';
+include 'conexao.php';
+		}?>
+
 	<hr/>	
 <header style="background-color: #293337; padding-top: 20px;">
 	<div class="row">
@@ -22,9 +30,18 @@
 			<img src="img/logo2.jpg">
 		</div>
 			
+	<?php 
+
+if($_SESSION['nome1']){
+echo "<div style='color:#fff'>Olá ".$_SESSION['nome1']." seja feliz.</div>"; 
+
+include 'conexao.php';
+		}
+
+else{
 
 
-<form method="POST" action="logar.php" class="col-md-7" style="color: #3ae5e7; padding-bottom: 20px">
+echo '<form method="POST" action="logar.php" class="col-md-7" style="color: #3ae5e7; padding-bottom: 20px">
 	  <div class="form-group">
 	    <label for="exampleInputEmail1">CPF</label>
 	    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="CPF" name="cpf">
@@ -37,14 +54,7 @@
   </div>
   <div class="form-check">
    <div style="color: #fff;">			
-   	<?php 
-		session_start();
-		include 'conexao.php';
-		echo $_SESSION['nome1'];
-		echo $_SESSION['datan'];
-
-
-	 ?>
+ 
 </div>	
   
   </div>
@@ -52,9 +62,9 @@
 </form>
 
 
+';}
+?>
 </div>
-
-
 
 
 

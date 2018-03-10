@@ -9,12 +9,12 @@ $result = $conn->query($sql);
 		while($row = $result -> fetch_assoc())
 		{
 	 	$_SESSION['nome1'] = $row['nome'];
-	 	$_SESSION['datan'] = $row['datan'];
+	 	
 		
 		
-	 			header('refresh: 3, index.php');
+	 			header('location: index.php');
 				echo "ta indo rapaz confio em tu <3";
-			
+				
 	 } 
 	}
 	 $conn -> close();
