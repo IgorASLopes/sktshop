@@ -7,7 +7,7 @@
 <?php
 include "conexao.php";
 
-$sql = "SELECT * FROM games";
+$sql = "SELECT * FROM produtos";
 $result = $conn->query($sql);
 if($result->num_rows > 0){
 
@@ -41,12 +41,11 @@ if($result->num_rows > 0){
   <img class="card-img-top" src="'.$row['foto'].'" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">'.$row['nome'].'</h5>
-      <p class="card-text">Classificação :   '.$row['classificacao'].'</p>
-        <p class="card-text">Gênero:   '.$row['genero'].'</p>
+   
         <p class="card-text">preço:   '.$row['preco'].'</p>
-        <center> <a href="#" class="btn btn-outline-info">Add ao carrinho</a></center>
+        <center> <a href="carrinho.php?acao=add&id='.$row['id'].'" class="btn btn-outline-info">Add ao carrinho</a><a href="#" class="btn btn-outline-info">Ver mais</a></center>
 
-  </div>
+  </div>  
 </div>
 
 

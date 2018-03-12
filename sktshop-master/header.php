@@ -6,7 +6,6 @@
 <title>SKT Shop</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="icon" type="image/png" href="img/icon2.png"/>	
-	
 
 </head>
 
@@ -16,6 +15,14 @@
   Semana dos Games
 </div>
 	<h1 style="text-align: center">SKT Shop</h1>
+	<?php 
+session_start();
+if($_SESSION['nome1']){
+
+echo '<center><button type="submit" class="btn btn-outline-info"><a href="sair.php">Desconectar</a></button></center>';
+include 'conexao.php';
+		}?>
+
 	<hr/>	
 <header style="background-color: #293337; padding-top: 20px;">
 	<div class="row">
@@ -23,9 +30,18 @@
 			<img src="img/logo2.jpg">
 		</div>
 			
+	<?php 
+
+if($_SESSION['nome1']){
+echo "<div style='color:#fff'>Olá ".$_SESSION['nome1']." seja feliz.</div>"; 
+
+include 'conexao.php';
+		}
+
+else{
 
 
-<form method="POST" action="logar.php" class="col-md-7" style="color: #3ae5e7; padding-bottom: 20px">
+echo '<form method="POST" action="logar.php" class="col-md-7" style="color: #3ae5e7; padding-bottom: 20px">
 	  <div class="form-group">
 	    <label for="exampleInputEmail1">CPF</label>
 	    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="CPF" name="cpf">
@@ -37,16 +53,18 @@
     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha" name="senha">
   </div>
   <div class="form-check">
-   
+   <div style="color: #fff;">			
+ 
+</div>	
   
   </div>
  <center> <button type="submit" class="btn btn-outline-info my-2 my-sm-0">Entrar</button></center>
 </form>
 
 
+';}
+?>
 </div>
-
-
 
 
 
@@ -85,6 +103,7 @@
       <a class="nav-item nav-link" href="index.php" style="color: #3ae5e7">Home</a>
       <a class="nav-item nav-link" href="produtos.php" style="color: #3ae5e7">Produtos</a>
       <a class="nav-item nav-link" href="cadastro.php" style="color: #3ae5e7">Cadastro</a>
+      <a class="nav-item nav-link" href="carrinho.php" style="color: #3ae5e7">Carrinho</a>
    
     </nav>
 
@@ -99,41 +118,43 @@
     <ul class="navbar-nav mr-auto">
 
       <li class="nav-item active">
-        <a class="nav-link" href="games.php" style="color: #3ae5e7">Games<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="produto.php?cat=game" style="color: #3ae5e7">Games<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="livros.php" style="color: #3ae5e7">Livros</a>
+        <a class="nav-link" href="produto.php?cat=Livro" style="color: #3ae5e7">Livros</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="celulares.php" style="color: #3ae5e7">Celulares</a>
+        <a class="nav-link" href="produto.php?cat=cel" style="color: #3ae5e7">Celulares</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="info.php" style="color: #3ae5e7">Informática</a>
+        <a class="nav-link" href="produto.php?cat=info" style="color: #3ae5e7">Informática</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="roupas.php" style="color: #3ae5e7">Roupas</a>
+        <a class="nav-link" href="produto.php?cat=roupa" style="color: #3ae5e7">Roupas</a>
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="eletro.php" style="color: #3ae5e7">Eletronicos</a>
+        <a class="nav-link" href="produto.php?cat=eletro" style="color: #3ae5e7">Eletronicos</a>
       </li>
      
      
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="pesquisar" aria-label="Search">
+    <form class="form-inline my-2 my-lg-0" method="POST" action="selectpesquisa.php">
+      <input class="form-control mr-sm-2" type="search" placeholder="pesquisar" aria-label="Search" name="nome">
       <button class="btn btn-outline-info my-2 my-sm-0" type="submit">pesquisar</button>
     </form>
   </div>
 </nav>
 
-	
+	 
 			</header>
 
 
 
 
 
-
+<?php
+include 'conexao.php';
+?>
 
 
 </div>

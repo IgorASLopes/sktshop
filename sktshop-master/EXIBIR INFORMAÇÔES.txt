@@ -1,0 +1,8 @@
+HEADER CARAI N ESQUECE DESSA PORRA SEU MERDA
+
+
+	<?php 
+		session_start();
+		echo $_SESSION['nome'];
+			
+	 ?>

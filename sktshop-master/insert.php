@@ -9,7 +9,7 @@
 	$senha = $_POST['senha'];
 	$email = $_POST['email'];
 
-	$sql = "INSERT INTO cliente (nome, datan, endereco, cpf, senha, email) VALUES ('$nome', '$endereco', '$datan','$cpf', '$senha', '$email')";
+	$sql = "INSERT INTO cliente (nome, endereco, datan, cpf, senha, email) VALUES ('$nome', '$endereco', '$datan','$cpf', '$senha', '$email')";
 
 	if ($conn->query($sql) === TRUE){
 	echo "usuário inserido com sucesso";

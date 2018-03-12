@@ -56,7 +56,7 @@ if($result->num_rows > 0){
         <p class="card-text">Gênero:   '.$row['genero'].'</p>
         <p class="card-text">Editora:   '.$row['editora'].'</p>
         <p class="card-text">preço:   '.$row['preco'].'</p>
-        <center> <a href="#" class="btn btn-outline-info">Add ao carrinho</a></center>
+         <center> <a href="#" class="btn btn-outline-info">Add ao carrinho</a><a href="#" class="btn btn-outline-info">Ver mais</a></center>
 
   </div>
 </div>
